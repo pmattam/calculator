@@ -9,10 +9,7 @@ class Calculator extends Component {
     super(props);
     this.state = {
       formula: '',
-      result: 0,
-      prevVal: '',
-      currVal: '',
-      operator: ''
+      result: 0
     };
   }
   
@@ -20,20 +17,31 @@ class Calculator extends Component {
     if(event.target.value === 'AC') {
       this.setState({
         formula: '',
-        result: 0,
-        prevVal: '',
-        currVal: '',
-        operator: ''
-      })
+        result: 0
+      });
+    } else if(event.target.value !== '=') {
+      this.setState({
+        formula: this.state.formula + event.target.value
+      });
+    } else if(event.target.value === '=') {
+      let endResult = eval(this.state.formula);
+      let formulaAndEndResult = this.state.formula + '=' + endResult;
+      this.setState({
+        formula: formulaAndEndResult,
+        result: endResult
+      });
     }
   }; 
 
   render() {
     let handleClick = this.handleClick;
+    let formula = this.state.formula;
     return (
       <div className='App'>
         <div className='fr'> 
-          <Formula />
+          <Formula 
+          formula = {formula}
+          />
           <Result 
             result={this.state.result}
           />
