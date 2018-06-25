@@ -1,138 +1,105 @@
-    /* .App {
-    text-align: center;
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.App-logo {
-    animation: App-logo-spin infinite 1s linear;
-    height: 80px;
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    height: 320px;
+    width: 250px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    justify-content: center;
 }
 
-.App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
+.fr {
+    display: flex;
+    flex-direction: column;
 }
 
-.App-title {
-    font-size: 1.5em;
+.formula {
+    display: flex;
+    height: 40px;
+    width: 250px;
+    background-color: lightgrey;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid black; */
 }
 
-.App-intro {
-    font-size: large;
+.result {
+    display: flex;
+    height: 40px;
+    width: 250px;
+    background-color: lightgrey;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid black; */
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-} */
-    
-    #root {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    
-    .App {
-        display: flex;
-        flex-wrap: wrap;
-        height: 320px;
-        width: 250px;
-        border: 1px solid lightgray;
-        border-radius: 2px;
-        justify-content: center;
-    }
-    
-    .fr {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .formula {
-        display: flex;
-        height: 40px;
-        width: 250px;
-        background-color: lightgrey;
-        justify-content: flex-end;
-        align-items: center;
-        /* border: 1px solid black; */
-    }
-    
-    .result {
-        display: flex;
-        height: 40px;
-        width: 250px;
-        background-color: lightgrey;
-        justify-content: flex-end;
-        align-items: center;
-        /* border: 1px solid black; */
-    }
-    
-    .bt {
-        display: flex;
-    }
-    
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        height: 240px;
-        width: 250px;
-        /* border: 1px solid black; */
-    }
-    
-    .row1,
-    .row2,
-    .row3,
-    .row4,
-    .row5 {
-        display: flex;
-        height: 48px;
-        width: 250px;
-    }
-    
-    .ac {
-        display: flex;
-        flex: 3.7;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-    }
-    
-    .div {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-    }
-    
-    .seven,
-    .eight,
-    .nine,
-    .mul,
-    .four,
-    .five,
-    .six,
-    .sub,
-    .one,
-    .two,
-    .three,
-    .add,
-    .zero,
-    .decimal,
-    .equals {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-    }
-    
-    .z1 {
-        flex: 2.39;
-    }
+.bt {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    width: 250px;
+    /* border: 1px solid black; */
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    display: flex;
+    height: 48px;
+    width: 250px;
+}
+
+.ac {
+    display: flex;
+    flex: 3.7;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.div {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.seven,
+.eight,
+.nine,
+.mul,
+.four,
+.five,
+.six,
+.sub,
+.one,
+.two,
+.three,
+.add,
+.zero,
+.decimal,
+.equals {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.z1 {
+    flex: 2.39;
+}
